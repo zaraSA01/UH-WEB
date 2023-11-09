@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keliling Jajar Genjang</title>
+</head>
+<body>
+    <label for="sisiA">Masukkan panjang sisi a:</label>
+    <input type="number" id="sisiA">
+    <label for="sisiB">Masukkan panjang sisi b:</label>
+    <input type="number" id="sisiB">
+    <button onclick="hitungKeliling()">Hitung Keliling</button>
+    <p id="hasil"></p>
+
+    <script>
+        function hitungKeliling() {
+            let sisiA = parseFloat(document.getElementById("sisiA").value);
+            let sisiB = parseFloat(document.getElementById("sisiB").value);
+            let hasilElement = document.getElementById("hasil");
+
+            if (!isNaN(sisiA) && !isNaN(sisiB)) {
+                let keliling = 2 * (sisiA + sisiB);
+                hasilElement.textContent = `Keliling jajar genjang adalah: ${keliling}`;
+            } else {
+                hasilElement.textContent = "Masukkan panjang sisi a dan sisi b dengan benar.";
+            }
+        }
+    </script>
+</body>
+</html>

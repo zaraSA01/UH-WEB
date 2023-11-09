@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var jenisOlahraga = ["renang", "basket", "voly", "sepak bola", "bulu tangkis"];
+
+var skorPertandingan = {
+    renang: 1,
+    basket: 2,
+    voly: 3,
+    "sepak bola": 4,
+    "bulu tangkis": 5
+};
+
+var totalSkor = 0;
+for (var olahraga in skorPertandingan) {
+    totalSkor += skorPertandingan[olahraga];
+}
+
+console.log("Jenis Olahraga: " + jenisOlahraga);
+console.log("Skor Pertandingan: ");
+console.log(skorPertandingan);
+console.log("Total Skor: " + totalSkor);
+    </script>
+</body>
+</html>

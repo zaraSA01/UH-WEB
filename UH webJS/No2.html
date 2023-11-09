@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penilaian</title>
+</head>
+<body>
+    <label for="nilaiInput">Masukkan nilai:</label>
+    <input type="number" id="nilaiInput" min="0" max="100">
+    <button onclick="cekNilai()">Cek</button>
+    <p id="hasil"></p>
+
+    <script>
+        function cekNilai() {
+            let nilaiInput = document.getElementById("nilaiInput").value;
+            let hasilElement = document.getElementById("hasil");
+
+            if (nilaiInput > 80) {
+                hasilElement.textContent = "SANGAT MEMUASKAN";
+            } else if (nilaiInput >= 60) {
+                hasilElement.textContent = "MEMUASKAN";
+            } else {
+                hasilElement.textContent = "JANGAN MENYERAH, COBA LAGI!";
+            }
+        }
+    </script>
+</body>
+</html>

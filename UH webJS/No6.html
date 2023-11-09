@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Smartphone</title>
+</head>
+<body>
+    <label for="inputBox">Masukkan spesifikasi smartphone:</label>
+    <input type="text" id="inputBox">
+    <button onclick="cekSpesifikasi()">Cek</button>
+    <p id="output"></p>
+
+    <script>
+        function cekSpesifikasi() {
+            let inputBox = document.getElementById("inputBox").value;
+            let outputElement = document.getElementById("output");
+
+            if (inputBox.toLowerCase() === "10mp") {
+                outputElement.textContent = "Jenis: Kamera";
+            } else if (inputBox.toLowerCase() === "108mp") {
+                outputElement.textContent = "Jenis: Kamera";
+            } else if (inputBox.toLowerCase() === "128gb") {
+                outputElement.textContent = "Jenis: Memori";
+            } else if (inputBox.toLowerCase() === "256gb") {
+                outputElement.textContent = "Jenis: Memori";
+            } else {
+                outputElement.textContent = "Jenis tidak dikenali";
+            }
+        }
+    </script>
+</body>
+</html>

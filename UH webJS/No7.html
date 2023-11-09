@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tampilkanSeragam(hari) {
+            switch(hari.toLowerCase()) {
+                case 'senin':
+                    return "kemeja putih bawahan biru";
+                case 'selasa':
+                    return "seragam identitas abu - abu";
+                case 'rabu':
+                    return "seragam batik TS bawahan hitam";
+                case 'kamis':
+                    return "baju praktek bawahan hitam";
+                case 'jumat':
+                    return "seraga pramuka coklat";
+                case 'mapel pjok':
+                    return "menggunakan pakaian olahraga atau sport";
+                default:
+                    return "Hari tidak valid";
+            }
+        }
+        
+        let hari = "senin";
+        let seragam = tampilkanSeragam(hari);
+        
+        console.log(`Hari ${hari}: ${seragam}`);
+    </script>
+</body>
+</html>
